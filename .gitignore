@@ -1,8 +1,7 @@
-[Ll]ibrary/
-[Tt]emp/
+/Wrightsman-2D-Week/Library/
+/Wrightsman-2D-Week/Temp/
 [Oo]bj/
-[Bb]uild/
-[Bb]uilds/
+
 Assets/AssetStoreTools*
 
 # Visual Studio cache directory
