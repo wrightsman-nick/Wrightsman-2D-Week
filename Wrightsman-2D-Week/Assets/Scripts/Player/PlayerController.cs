@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 5f;
     public float jumpSpeed = 200f;
 
+    public SpriteRenderer spriteRenderer;
+    public Animator animator;
+    
+
     
     // Start is called before the first frame update
     void Start()
@@ -39,7 +43,23 @@ public class PlayerController : MonoBehaviour
 
         rigidBody2D.AddForce(direction);
 
+        if( rigidBody2D.velocity.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else
+        {
+            spriteRenderer.flipX = true;
+        }
 
+        if ( Mathf.Abs(horizontalInput) > 0f)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
     }
 
     void Jump()
