@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - TicTac
+  - Lava
   layers:
   - Default
   - TransparentFX

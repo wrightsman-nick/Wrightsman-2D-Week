@@ -1083,6 +1083,7 @@ MonoBehaviour:
   jumpSpeed: 15
   countText: {fileID: 743533534}
   TicTac: {fileID: 1799716110}
+  Lava: {fileID: 2020553478}
   spriteRenderer: {fileID: 917564045}
   animator: {fileID: 917564046}
 --- !u!1001 &563130797
@@ -11431,8 +11432,8 @@ GameObject:
   - component: {fileID: 2020553479}
   - component: {fileID: 2020553481}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
+  m_Name: Lava
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11496,8 +11497,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020553478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.5718, y: -4.3455, z: 0}
-  m_LocalScale: {x: 156.17157, y: 1.4223859, z: 1}
+  m_LocalPosition: {x: 35.06, y: -10.15, z: 0}
+  m_LocalScale: {x: 156.17157, y: 13.68, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
