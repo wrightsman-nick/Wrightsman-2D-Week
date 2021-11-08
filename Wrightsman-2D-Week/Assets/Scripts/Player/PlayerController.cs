@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
 
     public GameObject TicTac;
+    public GameObject Lava;
 
     private int count;
 
@@ -85,10 +86,20 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
+
+        if (other.gameObject.CompareTag("Lava"))
+        {
+            SceneManager.LoadScene (0);
+        }
     }
 
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
+
+        if (count == 35)
+        {
+            countText.text = "YOU WON! You collected: " + count.ToString() + " Tic Tacs!";
+        }
     }
 }
