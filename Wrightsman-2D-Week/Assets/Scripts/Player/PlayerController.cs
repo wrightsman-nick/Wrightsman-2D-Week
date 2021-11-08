@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour
 
         if (count == 35)
         {
-            countText.text = "YOU WON! You collected " + count.ToString() + " Tic Tacs!";
+            countText.text = "YOU WON! You collected all " + count.ToString() + " Tic Tacs!";
         }
     }
 }
